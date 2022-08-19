@@ -1,0 +1,27 @@
+.supplies {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.supply {
+    display: flex;
+    justify-content: space-between;
+
+    background: #a9e34b;
+    padding: 0.25em 0.5em;
+    border-radius: 0.5em;
+    gap: 0.5em;
+
+    font-size: 0.75em;
+    font-weight: 600;
+}
+
+.supply.absent {
+    background: #adb5bd55;
+    color: #00000033;
+}
+
+.supply:hover {
+    transform: scale(1.1);
+}

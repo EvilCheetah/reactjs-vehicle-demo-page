@@ -1,0 +1,15 @@
+.status {
+    padding: 0.5em 2em;
+}
+
+.available {
+    background: #a9e34b;
+}
+
+.not-available {
+    background: #4dabf7;
+}
+
+.under-the-load {
+    background: #ffa94d;
+}

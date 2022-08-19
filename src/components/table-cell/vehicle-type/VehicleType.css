@@ -1,0 +1,23 @@
+.type {
+    font-weight: 600;
+}
+
+.dimensions {
+    /* white-space: pre-wrap; */
+}
+
+.vehicle-type {
+    text-align: start;
+    vertical-align: top;
+}
+
+.box-dimensions,
+.door-dimensions {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.info {
+    display: inline-block;
+}

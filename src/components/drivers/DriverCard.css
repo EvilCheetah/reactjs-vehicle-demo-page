@@ -1,0 +1,30 @@
+.first-name,
+.middle-name,
+.last-name {
+    display: inline-block;
+}
+
+.contact-information {
+    text-align: left;
+    margin-left: 1em;
+}
+
+.phone-number:hover,
+.phone-number:active {
+    text-decoration: underline;
+}
+
+.item {
+    display: inline-block
+}
+
+.driver-info {
+    display: flex;
+    gap: 0.25em;
+}
+
+.driver-equipment .item.absent {
+    display: none;
+    color: #00000055;
+    filter: grayscale(1);
+}

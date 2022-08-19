@@ -1,0 +1,22 @@
+table {
+    background: #f8f9fa;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+th {
+    border-right: 3px solid #212529;
+    border-bottom: 3px solid #212529;
+    padding: 0.25em 0.75em;
+}
+
+td {
+    padding: 1em;
+    margin: none;
+    border-bottom: 1px solid;
+    border-right: 1px solid #21252922;
+}
+
+tbody:nth-last-of-type(even) {
+    background: #dee2e6;
+}
