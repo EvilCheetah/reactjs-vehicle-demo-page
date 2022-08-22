@@ -1,7 +1,7 @@
 import './DriverCard.css';
 import { Driver } from "../../interface/driver.interface";
-import { get_item_visibility } from '../../function/get-item-visibility.function';
 import DriverName from './DriverName';
+import DriverEquipment from './DriverEquipment';
 
 
 function DriverCard({ driver }: { driver: Driver })
@@ -10,17 +10,7 @@ function DriverCard({ driver }: { driver: Driver })
         <div className="driver-card">
             <div className="driver-info">
                 <DriverName name={driver.name} />
-                <div className="driver-equipment">
-                    <div className={`item vaccine ${get_item_visibility(driver.is_vaccinated)}`}>
-                        💉
-                    </div>
-                    <div className={`item hazmat ${get_item_visibility(driver.is_haz_mat)}`}>
-                        ☣️
-                    </div>
-                    <div className={`item xborder ${get_item_visibility(driver.is_xborder)}`}>
-                        🛃
-                    </div>
-                </div>
+                <DriverEquipment equipment={driver.equipment} />
             </div>
             <div className="contact-information">
                 <a 
