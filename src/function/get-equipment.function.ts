@@ -1,27 +1,21 @@
-import { VEHICLE_EQUIPMENT } from "../constant/vehicle-equipment.constant";
 import { EquipmentPresense } from "../interface/equipment.interface";
-import { VehicleEquipment } from "../types/vehicle-equipment.type";
+import { equipment } from "../types/equipment.type";
+import { is_in_array } from "./is-in-array.function";
 
 
-function _find_equipment(vehicle_equipment: Array<VehicleEquipment>, equipment_to_find: string): boolean
-/// Checks whether `equipment` is within `vehicle_equipment` is in array case insensitively
-{
-    return vehicle_equipment.some( 
-        (equipment) => ( equipment.toLowerCase() === equipment_to_find.toLowerCase() )
-    );
-}
-
-
-export function get_equipment_presense(vehicle_equipment: Array<VehicleEquipment>): EquipmentPresense[]
+export function get_equipment_presense(
+    existing_equipment: Array<equipment>, 
+    eqipment_to_match:  Array<equipment>
+): EquipmentPresense[]
 /// Converts an Array of included Equipment to
 /// Array of Objects of All Possible eqipment
 {
-    return VEHICLE_EQUIPMENT.map(
+    return eqipment_to_match.map(
         (equipment) =>
         {
             return {
                 equipment,
-                is_present: _find_equipment(vehicle_equipment, equipment)
+                is_present: is_in_array(equipment, existing_equipment)
             }
         }
     )
