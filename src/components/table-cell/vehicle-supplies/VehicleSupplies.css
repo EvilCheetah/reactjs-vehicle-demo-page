@@ -4,12 +4,12 @@
     gap: 0.25em;
 }
 
-.supply {
+.supply-item {
     display: flex;
     justify-content: space-between;
 
     background: #a9e34b;
-    padding: 0.25em 0.5em;
+    padding: 0.125em 0.25em;
     border-radius: 0.5em;
     gap: 0.5em;
 
@@ -17,11 +17,11 @@
     font-weight: 600;
 }
 
-.supply.absent {
+.supply-item.absent {
     background: #adb5bd55;
     color: #00000033;
 }
 
-.supply:hover {
+.supply-item:hover {
     transform: scale(1.1);
 }
