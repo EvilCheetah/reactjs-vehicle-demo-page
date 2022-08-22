@@ -1,27 +1,24 @@
-.equipment-list {
+.vehicle-equipment {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     gap: 0.25em;
 }
 
-.equipment {
+.vehicle-equipment-item {
     background: #4dabf7;
     padding: 0.125em 0.250em;
     border-radius: 0.5em;
-    flex-shrink: 0;
-    flex-grow: 1 ;
-    /* flex: 1 1 0; */
     font-size: 0.75em;
     font-weight: 600;
 }
 
-.equipment.absent {
+.vehicle-equipment-item.absent {
     /* display: none; */
     background: #adb5bd55;
     color: #00000033;
 }
 
-.equipment:hover {
+.vehicle-equipment-item:hover {
     transform: scale(1.1);
 }
