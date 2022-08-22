@@ -1,6 +1,8 @@
 export interface Supplies
 {
-    blankets: number;
+    load_bars: number;
 
-    straps:   number;
+    blankets:  number;
+
+    straps:    number;
 }
