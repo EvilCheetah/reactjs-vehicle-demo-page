@@ -1,6 +1,5 @@
 import './VehicleSupplies.css';
-import Straps from "./Straps";
-import Blankets from "./Blankets";
+import SupplyCard from './SupplyCard';
 import { Supplies } from "../../../interface/supplies.interface";
 
 
@@ -9,8 +8,12 @@ function VehicleSupplies({ supplies }: { supplies: Supplies })
     return (
         <td>
             <div className="supplies">
-                <Blankets blankets={supplies.blankets} />
-                <Straps   straps={supplies.straps} />
+                {
+                   Object.entries(supplies).map(
+                    ([supply_name, quantity]) =>
+                    (<SupplyCard supply_name={supply_name} quantity={quantity} />)
+                   )
+                }
             </div>
         </td>
     );
