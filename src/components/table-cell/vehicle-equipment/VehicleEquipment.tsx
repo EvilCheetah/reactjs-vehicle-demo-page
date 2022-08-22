@@ -1,29 +1,27 @@
 import './VehicleEquipment.css';
-import { Equipment } from "../../../types/vehicle-equipment.type";
+import { get_visibility } from '../../../function/get-visibility.function';
+import { VEHICLE_EQUIPMENT } from '../../../constant/vehicle-equipment.constant';
 import { get_equipment_presense } from "../../../function/get-equipment.function";
-import { get_item_visibility } from "../../../function/get-item-visibility.function";
+import { VehicleEquipment as Equipment } from "../../../types/vehicle-equipment.type";
+import EquipmentCard from '../../equipment-card/EquipmentCard';
 
 
-function VehicleEquipment({ equipments }: { equipments: Equipment[] })
+function VehicleEquipment({ existing_equipment }: { existing_equipment: Equipment[] })
 {
-    const equipment_list = get_equipment_presense(equipments);
+    const equipment_list = get_equipment_presense(existing_equipment, [...VEHICLE_EQUIPMENT]);
 
     return (
         <td>
-            <div className="equipment-list">
+            <div className="vehicle-equipment">
                 {
                     equipment_list.map(
-                        ({ equipment, is_present }) =>
-                        {
-                            return (
-                                <div 
-                                    key={`${equipment.toLowerCase().replaceAll(' ', '')}`}
-                                    className={`equipment ${get_item_visibility(is_present)}`}
-                                >
-                                    { equipment }
-                                </div>
-                            );
-                        }
+                        (equipment) => (
+                            <EquipmentCard
+                                key={equipment.equipment}
+                                class_name='vehicle-equipment-item'
+                                equipment={equipment}
+                            />
+                        )
                     )
                 }
             </div>
