@@ -3,9 +3,9 @@ export const VEHICLE_EQUIPMENT = [
     "Pallet Jack"  ,
     "E-Tracks"     ,
     "Lift Gate"    ,
-    "Air ride"     ,
-    'Curtain Side' ,
-    "Side door"    ,
+    "Air Ride"     ,
+    "Curtain Side" ,
+    "Side Door"    ,
     "PPE"          ,
     "Ramps"        ,
 ] as const;
