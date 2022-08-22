@@ -20,7 +20,7 @@ function VehicleEntry({ vehicle }: VehicleEntryProps)
                 <VehiclePayload payload={vehicle.payload} />
                 <VehicleStatus  status={vehicle.status_information.status} />
                 <VehicleLocation location={vehicle.status_information} />
-                <VehicleEquipment equipments={vehicle.equipment} />
+                <VehicleEquipment existing_equipment={vehicle.equipment} />
                 <VehicleSupplies supplies={vehicle.supplies} />
             </tr>
         </>
