@@ -10,7 +10,7 @@ function Drivers({ drivers }: { drivers: Driver[] })
             <div className="drivers">
                 {
                     ( drivers && drivers.length < 1 ) ? 
-                    '—' :
+                    '———' :
                     drivers.map(
                         (driver) => ( <DriverCard key={driver.id}  driver={driver} /> )
                     )
