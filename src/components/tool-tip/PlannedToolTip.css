@@ -1,0 +1,9 @@
+.pro-number-tool-tip {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.owner {
+    display: flex;
+    gap: 0.25rem;
+}
