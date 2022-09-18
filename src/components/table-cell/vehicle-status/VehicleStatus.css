@@ -1,15 +1,17 @@
 .status {
     padding: 0.5em 2em;
+    border-radius: 2rem;
+    position: relative;
 }
 
 .available {
-    background: #a9e34b;
+    background: #c0eb75;
 }
 
 .not-available {
-    background: #4dabf7;
+    background: #74c0fc;
 }
 
 .under-the-load {
-    background: #ffa94d;
+    background: #ffc078;
 }

@@ -11,7 +11,7 @@ function VehicleSupplies({ supplies }: { supplies: Supplies })
                 {
                    Object.entries(supplies).map(
                     ([supply_name, quantity]) =>
-                    (<SupplyCard supply_name={supply_name} quantity={quantity} />)
+                    (<SupplyCard key={supply_name} supply_name={supply_name} quantity={quantity} />)
                    )
                 }
             </div>
