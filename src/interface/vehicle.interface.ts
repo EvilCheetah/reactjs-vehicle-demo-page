@@ -3,20 +3,23 @@ import { VehicleType } from "../types/vehicle-type.type";
 import { Dimensions2D } from "./2d-dimensions.interface";
 import { Dimensions3D } from "./3d-dimensions.interface";
 import { Driver } from "./driver.interface";
+import { Reserve } from "./reserve.interface";
 import { Status } from "./status.interface";
 import { Supplies } from "./supplies.interface";
 
 
 export interface Vehicle
 {
-    unit_id:            string;
+    vehicle_id:         string;
+
+    unit_number:        string;
+
+    pre_booked:         boolean;
 
     is_active:          boolean;
 
-    is_reserved:        boolean;
+    reserve:            Reserve;
     
-    unit_number:        string;
-
     drivers:            Driver[];
 
     vehicle_type:       VehicleType;
