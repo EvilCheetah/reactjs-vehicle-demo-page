@@ -1,3 +1,6 @@
+import { faBiohazard, faPersonMilitaryPointing, faSyringe } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Tooltip } from "@mui/material";
 import { equipment } from "../types/equipment.type";
 
 
@@ -7,13 +10,37 @@ export function get_equipment_display_value(equipment: equipment)
     {
         /// Driver Related Values
         case 'Vaccine':
-            return '💉';
+            return (
+                <Tooltip
+                    placement="top"
+                    title="Vaccinated"
+                    arrow
+                >
+                    <FontAwesomeIcon title="Vaccinated" icon={faSyringe} />
+                </Tooltip>
+            );
 
         case 'Haz-Mat':
-            return '☣️';
+            return (
+                <Tooltip
+                    placement="top"
+                    title="Haz-Mat"
+                    arrow
+                >
+                    <FontAwesomeIcon icon={faBiohazard} />
+                </Tooltip>
+            );
 
         case 'X-Border':
-            return '🛃';
+            return (
+                <Tooltip
+                    placement="top"
+                    title="X-Border"
+                    arrow
+                >
+                    <FontAwesomeIcon icon={faPersonMilitaryPointing} />
+                </Tooltip>
+            );
 
         /// Vehicle Related Values
         case 'Dock High':
