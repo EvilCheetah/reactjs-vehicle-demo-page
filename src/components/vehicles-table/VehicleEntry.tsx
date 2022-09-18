@@ -14,11 +14,11 @@ function VehicleEntry({ vehicle }: VehicleEntryProps)
     return (
         <>
             <tr>
-                <UnitNumber unit_number={vehicle.unit_number} is_active={vehicle.is_active} is_reserved={vehicle.is_reserved}/>
+                <UnitNumber unit_number={vehicle.unit_number} is_active={vehicle.is_active} reserve={vehicle.reserve} pre_booked={vehicle.pre_booked} />
                 <Drivers    drivers={vehicle.drivers} />
                 <VehicleType vehicle_type={vehicle.vehicle_type} box_dimensions={vehicle.box_dimensions} door_dimensions={vehicle.door_dimensions} />
                 <VehiclePayload payload={vehicle.payload} />
-                <VehicleStatus  status={vehicle.status_information.status} />
+                <VehicleStatus  status={vehicle.status_information.status} pre_booked={vehicle.pre_booked} />
                 <VehicleLocation location={vehicle.status_information} />
                 <VehicleEquipment existing_equipment={vehicle.equipment} />
                 <VehicleSupplies supplies={vehicle.supplies} />
