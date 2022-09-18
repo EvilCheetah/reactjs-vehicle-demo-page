@@ -1,3 +1,4 @@
+import { Tooltip } from "@mui/material";
 import { DRIVER_EQUIPMENT } from "../../constant/driver-equipment.constant";
 import { get_equipment_presense } from "../../function/get-equipment.function";
 import { DriverEquipment as Equipment } from "../../types/driver-equipment.type";
@@ -12,13 +13,17 @@ function DriverEquipment({ equipment }: { equipment: Equipment[] })
         <div className="driver-equipment">
         {
             driver_equipment.map(
-                (equipment_item) => (
-                    <EquipmentCard 
-                        key={equipment_item.equipment}
-                        class_name='driver-equipment-item'
-                        equipment={equipment_item} 
-                    />
-                )
+                (equipment_item) => {
+                    return (
+                        <>
+                            <EquipmentCard
+                                key={equipment_item.equipment}
+                                class_name='driver-equipment-item'
+                                equipment={equipment_item} 
+                            />
+                        </>
+                    );
+                }
             )
         }
         </div>
