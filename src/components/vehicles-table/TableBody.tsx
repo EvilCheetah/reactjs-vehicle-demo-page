@@ -12,7 +12,7 @@ function TableBody({ vehicles }: TableBodyProps)
                 (vehicle: Vehicle) =>
                 {
                     return (
-                        <tbody key={vehicle.unit_id}>
+                        <tbody key={vehicle.vehicle_id}>
                             <VehicleEntry vehicle={vehicle} />
                         </tbody>
                     ) 
