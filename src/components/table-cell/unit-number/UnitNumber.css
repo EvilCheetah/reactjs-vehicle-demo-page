@@ -1,6 +1,6 @@
 .unit-information {
     position: relative;
-    min-width: 7em;
+    min-width: 9em;
 }
 
 .unit-number {
@@ -10,7 +10,7 @@
 }
 
 .not-active-unit {
-    background: #adb5bd55;
+    background: #adb5bd55; 
     color: #00000033;
 }
 
@@ -19,6 +19,35 @@
     top: 0.25em;
     right: 0.25em;
     cursor: pointer;
+}
+
+.pre-booked {
+    position: absolute;
+    top: 0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 0.85em;
+    margin-inline: auto;
+    background-color: #fff3bf;
+    font-weight: 600;
+    color: #495057;
+    padding: 0.125em 0.5em;
+    border-radius: 0.5em;
+
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.pre-booked:hover {
+    box-shadow: 3px 4px 3px -2px #21252977;
+}
+
+.not-reserved {
+    color: #212529;
+}
+
+.reserved {
+    color: #f03e3e;
 }
 
 .not-active {
