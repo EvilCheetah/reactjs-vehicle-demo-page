@@ -1,0 +1,10 @@
+.reservation-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.reserved-by,
+.reserved-until {
+    display: flex;
+    gap: 1em;
+}
