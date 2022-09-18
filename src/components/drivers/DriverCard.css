@@ -4,6 +4,7 @@
     display: inline-block;
 }
 
+
 .contact-information {
     text-align: left;
     margin-left: 1em;
@@ -14,8 +15,15 @@
     text-decoration: underline;
 }
 
+.driver-equipment {
+    display: flex;
+    gap: 0.35em;
+}
+
 .driver-equipment-item {
-    display: inline-block
+    flex-shrink: 0;
+    display: inline-block;
+    width: 1em;
 }
 
 .driver-info {
