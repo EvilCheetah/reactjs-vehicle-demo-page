@@ -1,4 +1,4 @@
-# ReactJS Document Expiration Table
+# ReactJS Vehicle Tab
 
 This is the fourth visualization project. It was written to understand what is the best way to display the fleet. Mainly, I was focused on the dynamic rendering, using `useEffect` hook. Also, tweaked CSS animations a bit to make a webpage be a bit alive.
 
