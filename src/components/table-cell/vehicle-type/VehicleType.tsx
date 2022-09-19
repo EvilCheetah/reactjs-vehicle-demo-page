@@ -1,7 +1,7 @@
-import { VehicleInformationProps } from '../../../interface/props/vehicle-information-props.interface';
+import './VehicleType.css';
 import BoxDimensions from './BoxDimensions';
 import DoorDimensions from './DoorDimensions';
-import './VehicleType.css';
+import { VehicleInformationProps } from '../../../interface/props/vehicle-information-props.interface';
 
 
 function VehicleType({ vehicle_type, box_dimensions, door_dimensions }: VehicleInformationProps)

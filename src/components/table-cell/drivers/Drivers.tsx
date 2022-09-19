@@ -1,6 +1,6 @@
 import './Drivers.css';
-import { Driver } from "../../../interface/driver.interface";
 import DriverCard from '../../drivers/DriverCard';
+import { Driver } from "../../../interface/driver.interface";
 
 
 function Drivers({ drivers }: { drivers: Driver[] })

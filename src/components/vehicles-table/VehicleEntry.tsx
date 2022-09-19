@@ -2,11 +2,11 @@ import Drivers from "../table-cell/drivers/Drivers";
 import UnitNumber from "../table-cell/unit-number/UnitNumber";
 import VehicleType from "../table-cell/vehicle-type/VehicleType";
 import VehiclePayload from "../table-cell/vehicle-payload/VehiclePayload";
-import { VehicleEntryProps } from "../../interface/props/vehicle-entry-props.interface";
 import VehicleStatus from "../table-cell/vehicle-status/VehicleStatus";
 import VehicleLocation from "../table-cell/vehicle-location/VehicleLocation";
 import VehicleEquipment from "../table-cell/vehicle-equipment/VehicleEquipment";
 import VehicleSupplies from "../table-cell/vehicle-supplies/VehicleSupplies";
+import { VehicleEntryProps } from "../../interface/props/vehicle-entry-props.interface";
 
 
 function VehicleEntry({ vehicle }: VehicleEntryProps)

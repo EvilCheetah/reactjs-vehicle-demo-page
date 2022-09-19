@@ -1,5 +1,6 @@
-import './VehicleLocation.css';
 import { DateTime, Interval } from "luxon";
+
+import './VehicleLocation.css';
 import { Status } from "../../../interface/status.interface";
 
 

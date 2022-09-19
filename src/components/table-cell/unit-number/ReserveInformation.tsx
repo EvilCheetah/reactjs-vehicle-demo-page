@@ -1,6 +1,5 @@
 import './ReserveInformation.css';
 import { useEffect, useState } from "react";
-import { User } from '../../../interface/user.interface';
 
 
 function ReserveInformation({ reserved_by, reserved_until }: {reserved_by: string, reserved_until: string})

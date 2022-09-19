@@ -1,9 +1,7 @@
 import './UnitNumber.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faKey, faLock, faRoadLock } from '@fortawesome/free-solid-svg-icons';
-import PlannedToolTip from '../../tool-tip/PlannedToolTip';
-import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
+import Tooltip from '@mui/material/Tooltip';
 import Reserved from './Reserved';
+import PlannedToolTip from '../../tool-tip/PlannedToolTip';
 import { Reserve } from '../../../interface/reserve.interface';
 
 
@@ -16,7 +14,7 @@ function UnitNumber({ unit_number, is_active, reserve, pre_booked }: { unit_numb
             {
                 pre_booked &&
                 <Tooltip 
-                    title={<PlannedToolTip pro_number="AAA" owner="Arman A."/>}
+                    title={<PlannedToolTip pro_number="AAA" owner="Percy J."/>}
                     placement="top"
                     arrow
                 >

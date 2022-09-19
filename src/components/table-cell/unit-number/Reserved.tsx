@@ -1,11 +1,10 @@
-import { faKey, faLock } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Tooltip } from "@mui/material";
 import { useEffect, useState } from "react";
+import { faKey, faLock } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { is_reserved } from "../../../function/is-reserved.function";
 import ReserveInformation from "./ReserveInformation";
-import user_list from '../../../data/users.json';
-import { User } from "../../../interface/user.interface";
 
 
 function Reserved({ reserve }: any)

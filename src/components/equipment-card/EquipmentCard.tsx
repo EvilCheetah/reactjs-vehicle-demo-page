@@ -1,5 +1,5 @@
-import { get_equipment_display_value } from "../../function/get-equipment-display-value.function";
 import { get_visibility } from "../../function/get-visibility.function";
+import { get_equipment_display_value } from "../../function/get-equipment-display-value.function";
 import { EquipmentCardProps } from "../../interface/props/equipment-card-props.interface";
 
 

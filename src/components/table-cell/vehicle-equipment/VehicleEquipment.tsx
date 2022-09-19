@@ -1,9 +1,8 @@
 import './VehicleEquipment.css';
-import { get_visibility } from '../../../function/get-visibility.function';
+import EquipmentCard from '../../equipment-card/EquipmentCard';
 import { VEHICLE_EQUIPMENT } from '../../../constant/vehicle-equipment.constant';
 import { get_equipment_presense } from "../../../function/get-equipment.function";
 import { VehicleEquipment as Equipment } from "../../../types/vehicle-equipment.type";
-import EquipmentCard from '../../equipment-card/EquipmentCard';
 
 
 function VehicleEquipment({ existing_equipment }: { existing_equipment: Equipment[] })
