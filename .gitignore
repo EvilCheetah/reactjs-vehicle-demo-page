@@ -1,5 +1,11 @@
-# Ignore env folder
+# Ignore Python Generated files
+__pycache__/
+
+# Ignore env/ folder
 venv/
 
 # Ignore env file
 .env
+
+# Ignore out/ folder
+out/
