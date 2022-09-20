@@ -14,10 +14,12 @@ To view the visualization, run `npm start`.
 
 If you just want to glance the final result, i.e. deployed version, go to the [Demo @ GitHub Pages](https://evilcheetah.github.io/ReactJS-Vehicle-Tab).
 
-## Credit
+# Credit
 
 Additional Thanks ❤️ to [Font Awesome](https://fontawesome.com/), for icons used in this project.
 
 Also, wanted to Thank ❤️ [MaterialUI](https://mui.com/), for using several components, which saved enormous amount of time.
 
-(Vehicle Equipment Icons)[https://github.com/EvilCheetah/ReactJS-Vehicle-Equipment-Icons] is a previous project, which part of was used in this project.
+[Vehicle Equipment Icons](https://github.com/EvilCheetah/ReactJS-Vehicle-Equipment-Icons) is a previous project, which is partially used in this project.
+
+[Data Generator](https://github.com/EvilCheetah/ReactJS-Vehicle-Tab/tree/data-generator) used to generate fake data. Great Thanks ❤️ to [Faker in Python](https://faker.readthedocs.io/en/master/).
