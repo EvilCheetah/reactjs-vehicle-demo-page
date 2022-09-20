@@ -23,6 +23,8 @@ def generate_orders(number_of_entries = 1) -> None:
 
     orders = [
         {
+            # Generate a string of format XXXX-XXX-XXXX
+            # Where X is a digit
             'order_id':        rstr.xeger(r'\d{4}-\d{3}-\d{4}'),
             'owner_id':      ( random.choice(users) )['user_id'],
             'attached_unit': ( random.choice(vehicles) )['vehicle_id'],
