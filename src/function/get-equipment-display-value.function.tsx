@@ -16,7 +16,9 @@ export function get_equipment_display_value(equipment: equipment)
                     title="Vaccinated"
                     arrow
                 >
-                    <FontAwesomeIcon title="Vaccinated" icon={faSyringe} />
+                    <>
+                        <FontAwesomeIcon title="Vaccinated" icon={faSyringe} />
+                    </>
                 </Tooltip>
             );
 
